@@ -7,7 +7,7 @@
 
 A Node.js toolkit for reading and responding to iMessages on macOS.
 
-I originally built this to power a weight-tracking accountability bot for a friend group — members log their weight via iMessage commands, the bot parses them and stores the data. Friends wanted to use the polling layer for their own projects, so I extracted it into this standalone toolkit.
+I originally built this to power a weight-tracking accountability bot for a friend group — members log their weight via iMessage commands, the bot parses them and stores the data. Friends wanted to use the polling layer for their own projects, so I extracted it into this standalone toolkit. See the [weight-tracker-demo](https://github.com/srpn97/weight-tracker-demo) for a full real-world example.
 
 Poll any iMessage group chat or direct message, react to commands, and send replies — all from a TypeScript script running on your Mac.
 
@@ -47,12 +47,14 @@ sqlite3 ~/Library/Messages/chat.db ".tables"
 
 ## Installation
 
-```bashnpm install imessage-bot
+```bash
+npm install imessage-bot
 ```
 
 Or clone and run locally:
 
-```bashgit clone https://github.com/yourusername/imessage-bot.git
+```bash
+git clone https://github.com/srpn97/imessage-bot.git
 cd imessage-bot
 npm install
 ```
