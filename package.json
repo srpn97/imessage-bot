@@ -2,6 +2,8 @@
   "name": "imessage-bot",
   "version": "0.1.0",
   "description": "A Node.js toolkit for reading and responding to iMessages on macOS",
+  "author": "Rishi Prabhat (https://rishiprabhat.com)",
+  "homepage": "https://rishiprabhat.com",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,6 +23,10 @@
     "dev": "tsc --watch",
     "find-chats": "npx tsx src/find-chats.ts",
     "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srpn97/imessage-bot.git"
   },
   "keywords": [
     "imessage",
