@@ -1,0 +1,51 @@
+{
+  "name": "imessage-bot",
+  "version": "0.1.0",
+  "description": "A Node.js toolkit for reading and responding to iMessages on macOS",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "find-chats": "npx tsx src/find-chats.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "imessage",
+    "bot",
+    "macos",
+    "messages",
+    "automation",
+    "applescript",
+    "sqlite"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "os": [
+      "darwin"
+    ]
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.0",
+    "node-typedstream": "^1.4.1"
+  }
+}
