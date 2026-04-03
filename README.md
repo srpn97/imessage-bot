@@ -1,5 +1,8 @@
 # imessage-bot
 
+[![npm version](https://img.shields.io/npm/v/imessage-bot)](https://www.npmjs.com/package/imessage-bot)
+[![npm downloads](https://img.shields.io/npm/dm/imessage-bot)](https://www.npmjs.com/package/imessage-bot)
+
 > **Use at your own risk.** This project reads from your local iMessage database and sends messages via AppleScript. The author is not liable for any unintended messages sent, data accessed, or consequences arising from use of this software. Review the code before running it.
 
 A Node.js toolkit for reading and responding to iMessages on macOS.
@@ -44,8 +47,12 @@ sqlite3 ~/Library/Messages/chat.db ".tables"
 
 ## Installation
 
-```bash
-git clone https://github.com/yourusername/imessage-bot.git
+```bashnpm install imessage-bot
+```
+
+Or clone and run locally:
+
+```bashgit clone https://github.com/yourusername/imessage-bot.git
 cd imessage-bot
 npm install
 ```
